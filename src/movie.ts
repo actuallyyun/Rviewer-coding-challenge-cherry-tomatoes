@@ -1,7 +1,6 @@
-import { type } from 'os'
-
 export type MovieTitle = string
 export type MovieDescription = string
+export type MovieId = string
 export interface PageNumber {
   pageNumber: number
 }
@@ -15,7 +14,7 @@ export type MovieImage = {
 }
 
 export type Movie = {
-  id: string
+  id: MovieId
   title: MovieTitle
   images: MovieImage
   description: MovieDescription
@@ -61,4 +60,8 @@ export function filterMovieByTitle(
   title: MovieTitle
 ): Movie[] {
   return movieData.entries.filter((movie) => movie.title.includes(title))
+}
+
+export function getMovieById(movieData: MovieData, id: MovieId): Movie[] {
+  return movieData.entries.filter((movie) => movie.id === id)
 }
