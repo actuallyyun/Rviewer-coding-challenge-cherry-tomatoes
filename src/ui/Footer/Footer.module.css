@@ -1,0 +1,43 @@
+footer{
+    background-color: black;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    padding-bottom: 1rem;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 80vw;
+    gap:0.5rem;   
+}
+
+
+.footerLogoContainer{
+    transform: scale(0.5);
+    display: flex;
+    justify-content: center;
+}
+
+.storeButtonGroup{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.copyrightWrapper{
+    padding: 1rem 0;
+}
+
+.copyrightText{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.06px;
+    letter-spacing: 0.35px;
+    color: #FFFFFF;
+    text-align: center;
+}

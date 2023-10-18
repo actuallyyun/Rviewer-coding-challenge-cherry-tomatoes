@@ -1,0 +1,19 @@
+.paginationNav{
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pageLinkWrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+
+}
+
+.chevron{
+    color: #FFFFFF;
+}
+
+
+

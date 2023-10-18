@@ -1,14 +1,13 @@
-import logo from "./rviewer-logo.svg";
+import logo from './iso.svg'
+import deadfulTomatoesLogo from './Dreadful Cherry Toma@2x.svg'
 import styles from './Header.module.css'
+import { LogoGroup } from './Logo'
 
 export function Header() {
-
-    return (
-        <header className={styles.header}>
-            <img width={80} src={logo} className={styles.rviewerLogo} alt="Rviewer logo"/>
-            <h3>
-                Welcome to the Rviewer React skeleton!
-            </h3>
-        </header>
-    )
+  return (
+    <header className={styles.header}>
+      <LogoGroup width={80} />
+    </header>
+  )
 }
+

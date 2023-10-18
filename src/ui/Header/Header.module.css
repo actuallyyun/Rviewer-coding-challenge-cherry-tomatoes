@@ -1,22 +1,33 @@
-.rviewerLogo {
-    margin: 3rem 0;
-}
-
 .header {
     align-items: center;
-    border-bottom: 1px solid #4FFAB6;
     color: white;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: calc(1rem + 2vmin);
-    justify-content: center;
+    justify-content: start;
     margin: auto;
-    max-width: 90vw;
     text-align: center;
 }
 
-@media (min-width: 1200px) {
-    .header {
-        max-width: 60vw;
-    }
+.logoText{
+    width: 298.66px;
+    translate: -3rem;
+    padding-top: 1rem;
 }
+
+.logoIcon{
+    height: 60px;
+    align-self: start;
+    justify-self: start;
+}
+
+.logoGroup{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+
+}
+
+
+
+
