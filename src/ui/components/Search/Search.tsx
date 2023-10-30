@@ -1,25 +1,12 @@
-import { useState } from 'react'
-import { Dispatch } from 'react'
-import { SetStateAction } from 'react'
-import { MovieData } from '../../../domain/MovieType'
-import { filterMovieByTitle } from '../../../domain/movie'
-import rviewerData from '../../../domain/data.json'
+import { FormEvent } from 'react'
 import styles from './Search.module.css'
 
 export type SearchProps = {
-  setMovieData: Dispatch<SetStateAction<MovieData>>
+  value: string
+  onChange: (e: FormEvent<HTMLInputElement>) => void
 }
 
-export function Search(props: SearchProps): JSX.Element {
-  const [title, setTitle] = useState('')
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    const filteredMovies = filterMovieByTitle(rviewerData, title)
-
-    props.setMovieData(filteredMovies)
-  }
-
+export function Search({ value, onChange }: SearchProps): JSX.Element {
   return (
     <div className={styles.searchContainer}>
       <div className={styles.searchGroup}>
@@ -28,15 +15,16 @@ export function Search(props: SearchProps): JSX.Element {
           className={styles.searchIcon}
           alt='search icon'
         />
-        <form onSubmit={handleSubmit} className={styles.searchForm}>
+        <div className={styles.searchForm}>
           <input
             type='text'
-            onChange={(event) => setTitle(event.target.value)}
+            value={value}
+            onChange={onChange}
             className={styles.searchInput}
             placeholder='Title'
             aria-label='title'
           />
-        </form>
+        </div>
       </div>
     </div>
   )
