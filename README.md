@@ -29,11 +29,12 @@ assets to start!
 Scored 4/5 in code quality, 4/5 in maintainability and 5/5 in testing in the code report from a Rviewer mentor.
 
 ## Highlights
-・Implemented Clean Architecture approach to produce clean, maintainable and well-designed code.
-・Created well isolated types and components that can be reused with ease.
-・Extracted multiple React Hooks into a custom Hook to improve performance and code maintainability.
-・Provided module based tests to test React components and application logic, achieved 93% code coverage.
-・Used module based CSS to manage stylesheets.
+
+- Implemented Clean Architecture approach to produce clean, maintainable and well-designed code.
+- Created well isolated types and components that can be reused with ease.
+- Extracted multiple React Hooks into a custom Hook to improve performance and code maintainability.
+- Provided module based tests to test React components and application logic, achieved 93% code coverage.
+- Used module based CSS to manage stylesheets.
 
 ## To read about how I refactored the code using React custom Hopk, go to 
 
